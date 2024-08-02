@@ -5,10 +5,13 @@ import bg from "../assets/profile.jpg";
 
 const Home = () => {
     const openResume = () => {
-        window.open(
-          "https://drive.google.com/file/d/1AsIE4OVNgQAhFOf7GnPYxFEdnL1mR5kM/view?usp=sharing",
-          "_blank"
-        );
+        const link = document.createElement('a');
+        link.href = 'https://drive.google.com/file/d/16ffVIvFC5pZ4jONvTtewxubzltg6guSf/view?usp=sharing';
+        link.target = '_blank'; // Replace with your actual file ID
+        link.download = 'nipun_resume.pdf'; // Desired file name
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
       };
   return (
     <Flex

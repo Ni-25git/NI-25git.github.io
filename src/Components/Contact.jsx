@@ -13,31 +13,31 @@ const Contact = () => {
       minH="60vh"
       id="contact"
     >
-      <Heading as="h2" size="xl" color="teal.500" mb={8}>
+      <Heading as="h2" size="xl" color="red.500" mb={8}>
         Contact
       </Heading>
       <VStack spacing={6} mb={8}>
         <Flex align="center">
           <Icon as={FaEnvelope} w={6} h={6} mr={2} />
-          <Link href="mailto:nipunsherawat@gmail.com" color="teal.500" isExternal>
+          <Link href="mailto:nipunsherawat@gmail.com" color="black.500" isExternal>
             nipunsherawat@gmail.com
           </Link>
         </Flex>
         <Flex align="center">
           <Icon as={FaGithub} w={6} h={6} mr={2} />
-          <Link href="https://github.com/Ni-25git" color="teal.500" isExternal>
+          <Link href="https://github.com/Ni-25git" color="black.500" isExternal>
             Ni-25git
           </Link>
         </Flex>
         <Flex align="center">
           <Icon as={FaLinkedin} w={6} h={6} mr={2} />
-          <Link href="https://www.linkedin.com/in/nipun-shaharavat-40927b2a3/" color="teal.500" isExternal>
+          <Link href="https://www.linkedin.com/in/nipun-shaharavat-40927b2a3/" color="black.500" isExternal>
             Nipun Shaharavat
           </Link>
         </Flex>
         <Flex align="center">
           <Icon as={FaPhone} w={6} h={6} mr={2} />
-          <Text color="teal.500">
+          <Text color="black.500">
             8171339623
           </Text>
         </Flex>

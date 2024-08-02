@@ -33,7 +33,7 @@ const Skills = () => {
       minH="100vh"
       id="skills"
     >
-      <Text fontSize="4xl" color="teal.500" fontWeight="bold" mb={8}>
+      <Text fontSize="4xl" color="red.500" fontWeight="bold" mb={8}>
         Skills
       </Text>
       <SimpleGrid columns={{ base: 1, sm: 2, md: 3 }} spacing={10} w="full" maxW="800px">

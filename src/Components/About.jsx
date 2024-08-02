@@ -9,11 +9,12 @@ const About = () => {
       justify="center"
       p={8}
       bg="gray.200"
-      minH="100vh"
+      minH="90vh"
       id="about"
+      
     >
-      <VStack spacing={4} maxW="800px" textAlign="center">
-        <Heading as="h2" size="xl" color="teal.500">
+      <VStack spacing={4} maxW="800px"  textAlign="center">
+        <Heading as="h2" mt={40}  size="xl" color="red.500">
           About
         </Heading>
         <Text fontSize="lg" color="gray.700">

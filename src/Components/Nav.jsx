@@ -22,15 +22,25 @@ const Nav = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const openResume = () => {
-    window.open(
-      "https://drive.google.com/file/d/1AsIE4OVNgQAhFOf7GnPYxFEdnL1mR5kM/view?usp=sharing",
-      "_blank"
-    );
+    const link = document.createElement('a');
+    link.href = 'https://drive.google.com/file/d/16ffVIvFC5pZ4jONvTtewxubzltg6guSf/view?usp=sharing';
+    link.target = '_blank'; // Open link in a new tab/window
+    link.download = 'nipun_resume.pdf'; // Desired file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
     <>
-      <Box bg="gray.800" px={4}>
+      <Box
+        bg="gray.800"
+        px={4}
+        position="fixed"
+        width="100%"
+        top="0"
+        zIndex="1000"
+      >
         <Flex h={16} alignItems="center" justifyContent="space-between">
           <Image
             borderRadius='full'
@@ -51,7 +61,7 @@ const Nav = () => {
             alignItems="center"
             display={{ base: 'none', md: 'flex' }}
             flex="1"
-            justify="center" // Center the nav items horizontally
+            justify="center"
           >
             <ScrollLink to="home" smooth={true} duration={500}>
               <Button variant="link" color="white">
@@ -126,13 +136,15 @@ const Nav = () => {
                 </Stack>
               </DrawerBody>
             </DrawerContent>
-            
           </Drawer>
         ) : null}
-        
+      </Box>
+      <Box mt="16"> {/* Add this to add margin top to your main content */}
+        {/* Your main content here */}
       </Box>
     </>
   );
 };
 
 export default Nav;
+    

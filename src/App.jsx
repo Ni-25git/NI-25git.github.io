@@ -5,6 +5,7 @@ import Contact from './Components/Contact'
 import Projects from './Components/Projects'
 import Nav from './Components/Nav'
 import Home from './Components/Home'
+import GithubStats from './Components/GithubStats'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,7 +17,9 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <GithubStats />
       <Contact />
+
      
     </div>
   )
